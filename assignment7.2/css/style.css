@@ -1,0 +1,32 @@
+/*CSS*/
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans', sans-serif;}
+img{max-width: 100%;height:auto}
+
+/*** Header start***/
+header{width:100%;height:50px;background:#454545;text-align:center;display:flex;justify-content:center;align-items:center;color:#fff;font-size:24px}
+
+/*** Main container start***/    
+.container{width:90%;margin:30px auto;border:1px solid #ddd;padding:25px;max-width:600px;text-align: center}
+
+/*** text container***/  
+.item-box{width:200px;height:200px;background-color:#30a415;display:flex;justify-content:center;align-items:center;font-size:30px;margin:0 auto;color:#fff}
+.item-box:hover{   
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: hover-item;
+    animation-duration: 5s;   
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hover-item {
+    0%   {background-color: #30a415; border-radius:0%;}
+    50%  {background-color: #c6b522;}
+    100% {background-color:#ff8604;border-radius:100%;}
+}
+
+/* Standard syntax */
+@keyframes hover-item {
+    0%   {background-color:#30a415; border-radius:0%;}
+    50%  {background-color: #c6b522;}
+    100% {background-color:#ff8604;border-radius:100%;}
+}
